@@ -9,25 +9,25 @@
                         font-family: Arial, sans-serif;
                         padding: 20px;
                         background-color: #f4f4f9;
-                        text-align: center; /* Centrar el título */
+                        text-align: center; 
                     }
                     h1 {
                         color: #003366;
                         margin-bottom: 20px;
                     }
                     table {
-                        border-collapse: collapse; /* Colapsar bordes para que se vean simples */
+                        border-collapse: collapse; 
                         width: 100%;
                         max-width: 900px;
                         margin: 0 auto; /* Centrar la tabla en la página */
                         background-color: white;
                         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
                         border-radius: 8px;
-                        overflow: hidden; /* Para que las esquinas redondeadas se apliquen a los bordes */
+                        overflow: hidden; 
                         border: 1px solid #ddd;
                     }
                     th {
-                        background-color: #000; /* Encabezado oscuro como la cartelera */
+                        background-color: #000; 
                         color: white;
                         padding: 12px 8px;
                         font-weight: bold;
@@ -78,4 +78,5 @@
             </body>
         </html>
     </xsl:template>
+
 </xsl:stylesheet>
