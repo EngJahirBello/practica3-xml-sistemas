@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo1.xslt"?>
+<carrera nombre="Ingeniería en Sistemas Computacionales" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation="cursos.xsd">
+    <curso>
+        <clave>ACF-0901</clave>
+        <nombre>Cálculo Diferencial</nombre>
+        <semestre>1</semestre>
+        <creditos>5</creditos>
+    </curso>
+    <curso>
+        <clave>AED-1285</clave>
+        <nombre>Fundamentos de Programación</nombre>
+        <semestre>1</semestre>
+        <creditos>5</creditos>
+    </curso>
+    <curso>
+        <clave>ACF-0903</clave>
+        <nombre>Álgebra Lineal</nombre>
+        <semestre>2</semestre>
+        <creditos>5</creditos>
+    </curso>
+    <curso>
+        <clave>AED-1286</clave>
+        <nombre>Programación Orientada a Objetos</nombre>
+        <semestre>2</semestre>
+        <creditos>5</creditos>
+    </curso>
+    <curso>
+        <clave>AED-1026</clave>
+        <nombre>Estructura de Datos</nombre>
+        <semestre>3</semestre>
+        <creditos>5</creditos>
+    </curso>
+    <curso>
+        <clave>AEF-1031</clave>
+        <nombre>Fundamentos de Bases de Datos</nombre>
+        <semestre>4</semestre>
+        <creditos>5</creditos>
+    </curso>
+    <curso>
+        <clave>SCD-1011</clave>
+        <nombre>Ingeniería de Software</nombre>
+        <semestre>6</semestre>
+        <creditos>5</creditos>
+    </curso>
+</carrera>
