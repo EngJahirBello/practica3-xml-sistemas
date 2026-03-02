@@ -5,78 +5,64 @@
             <head>
                 <title>Materias de Ingeniería en Sistemas Computacionales</title>
                 <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        padding: 20px;
-                        background-color: #f4f4f9;
-                        text-align: center; 
+                    body { 
+                        font-family: Arial, sans-serif; 
+                        padding: 20px; 
+                        background-color: #f4f4f9; 
                     }
-                    h1 {
-                        color: #003366;
-                        margin-bottom: 20px;
-                    }
-                    table {
-                        border-collapse: collapse; 
-                        width: 100%;
-                        max-width: 900px;
-                        margin: 0 auto; /* Centrar la tabla en la página */
-                        background-color: white;
-                        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                        border-radius: 8px;
-                        overflow: hidden; 
-                        border: 1px solid #ddd;
-                    }
-                    th {
-                        background-color: #000; 
-                        color: white;
-                        padding: 12px 8px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        border: 1px solid #ddd;
+                    h1 { 
+                        color: #003366; 
                         text-align: center;
+                        margin-bottom: 30px;
                     }
-                    td {
-                        padding: 10px 8px;
-                        text-align: center;
-                        border: 1px solid #ddd;
-                        color: #333;
+                    /* Estilos para la caja blanca que contiene la lista */
+                    .contenedor-lista {
+                        background: white; 
+                        padding: 30px 50px; 
+                        border-radius: 8px; 
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+                        max-width: 800px;
+                        margin: 0 auto;
                     }
-                    /* Efecto de rayas para filas impares para mejor legibilidad */
-                    tbody tr:nth-child(even) {
+                    ol { 
+                        margin: 0;
+                        padding-left: 20px;
+                    }
+                    li { 
+                        margin-bottom: 20px; 
+                        font-size: 18px; 
+                        color: #333; 
+                    }
+                    .detalles { 
+                        color: #666; 
+                        font-size: 14px; 
+                        margin-top: 5px; 
                         background-color: #f9f9f9;
-                    }
-                    /* Resaltado de fila al pasar el ratón */
-                    tbody tr:hover {
-                        background-color: #f1f1f1;
+                        padding: 10px;
+                        border-radius: 5px;
+                        border-left: 3px solid #003366;
                     }
                 </style>
             </head>
             <body>
                 <h1>Materias de <xsl:value-of select="carrera/@nombre"/></h1>
                 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Clave</th>
-                            <th>Nombre</th>
-                            <th>Semestre</th>
-                            <th>Créditos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                <div class="contenedor-lista">
+                    <ol>
                         <xsl:for-each select="carrera/curso">
-                            <tr>
-                                <td><xsl:value-of select="clave"/></td>
-                                <td><xsl:value-of select="nombre"/></td>
-                                <td><xsl:value-of select="semestre"/></td>
-                                <td><xsl:value-of select="creditos"/></td>
-                            </tr>
+                            <li>
+                                <strong><xsl:value-of select="nombre"/></strong>
+                                <div class="detalles">
+                                    Clave: <xsl:value-of select="clave"/> | 
+                                    Semestre: <xsl:value-of select="semestre"/> | 
+                                    Créditos: <xsl:value-of select="creditos"/>
+                                </div>
+                            </li>
                         </xsl:for-each>
-                    </tbody>
-                </table>
-
+                    </ol>
+                </div>
             </body>
         </html>
     </xsl:template>
-
 </xsl:stylesheet>
+
